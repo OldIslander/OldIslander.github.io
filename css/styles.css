@@ -1,0 +1,36 @@
+@font-face {
+	font-family: Domine;
+	src: url(Domine-VariableFont_wght.ttf);
+}
+body {
+	color: green;
+	background-color: #f4e3c3;
+}
+
+#header-nav {
+	background-color: #c3f4ef;
+	border-bottom: 3px solid black;
+}
+
+
+#self-pic {
+	background: url("self_xs.jpg") no-repeat;
+	margin-right:20px;
+	width: 206px;
+	height: 266px;
+	border: 3px solid #9ac2be;
+	
+}
+
+#Story {
+	font-family: Domine;
+}
+
+.navbar-brand {
+	margin-top: 200px;
+}
+
+h1{
+	font-family: Domine;
+	font-Size: 60px;
+}
