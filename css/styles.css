@@ -1,0 +1,60 @@
+@font-face {
+	font-family: Domine;
+	src: url(Domine-VariableFont_wght.ttf);
+}
+body {
+	color: green;
+	background-color: #f4e3c3;
+}
+
+#header-nav {
+	background-color: #c3f4ef;
+	border-bottom: 3px solid black;
+}
+
+
+#self-pic {
+	background: url("self_xs.jpg") no-repeat;
+	margin-right:20px;
+	width: 206px;
+	height: 266px;
+	border: 3px solid #9ac2be;
+	
+}
+
+#Story {
+	font-family: Domine;
+}
+
+.navbar-brand {
+	margin-top: 200px;
+}
+
+#LinkBox{
+	background-color: #eccf98;
+	border: 3px solid #e0b157;
+}
+
+#InfoBox{
+	background-color: #98ece4;
+	border: 3px solid #57e0d3;
+	margin: 20px;
+}
+
+#DownloadButton {
+  background-color: white;
+  border: 12px solid RoyalBlue;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+#DownloadButton:hover {
+  background-color: lightseagreen;
+}
+
+h1{
+	font-family: Domine;
+	font-Size: 60px;
+}
