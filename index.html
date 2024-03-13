@@ -16,8 +16,8 @@
 		<nav id = "header-nav" class="navbar navbar-default">
 	        <div class="container">
 	        	<div class="navbar-header">
-	        		<a href="index.html" class="float-start d-none d-xl-block">
-	        			<div id="self-pic" alt = "Picture of Me"></div>
+	        		<a  href="index.html" class="float-start d-none d-xl-block">
+	        			<img id = "self-pic" src="self_main.jpg" class="img-thumbnail float-start d-none d-xl-block" alt="sean">
 	        		</a>
 
 	        		<div class="navbar-brand">
@@ -33,9 +33,6 @@
 	        </div>
 	        <div class = "col-lg-3 col-12 col-sm-12">
 					<div class = "row">
-						<div id = "InfoBox" class = "col-lg-12 col-6">
-							<p>Phone: 615-609-4852</p>
-						</div>
 						<a href ="GatelyFTResume.pdf"><button id = "DownloadButton" class = "col-lg-12 col-6">
 			
 							Download Resume
@@ -47,12 +44,13 @@
 	    <div class = "container">
 	    	<div class = "row">
 	    		<div id = "Story" class = "col-lg-9 col-12">
+					<h5 id = "Bio">''</h5>
 	    			Hey there! Thanks for checking out my website.
 
 	    			<br><br>Here you'll find links to project repositories that best display my skills as well
 	    			as a narrative description of my abilities.
 
-	    			<br><br> I'm a recent college grad(B.S. in Computer Science) and tech aficionado. I'm also a self-taught web developer, as most of my coursework pertains to software development and artificial intelligence. I possess a broad array of programming experience, in languages including C++/C, C#, Python, Java and Javascript, and in various technologies including Linux, Git, .Net, and Docker. Currently I am managing at a local restaurant(Parthenon Grille) in Murfreesboro, but I'm looking to use my skillset to break into the tech industry.
+	    			<br><br> I'm a fresh college grad(B.S. in Computer Science) and tech enthusiast. Most of my coursework pertains to software development and artificial intelligence, but as a Fast Track graduate I am also proficient in full-stack web development. I possess a broad array of programming experience, in languages including C++/C, C#, Python, Java and Javascript, and in various technologies including Linux, Git, .Net, and Docker. Currently I formerly managed a local restaurant(Parthenon Grille) in Murfreesboro, and have recently broken into the tech industry.
 
 	    			<br><br> Whenever I'm not learning new technologies or keeping up with tech news, I usually spend my free time hiking, working out, reading, gaming, or watching shows on Netflix. In all honesty, I'm interested in just about anything and I tend to get along with people who are passionate about what they do.
 
@@ -65,18 +63,48 @@
 							<a href="https://www.linkedin.com/in/seancgately/"><p>Linkedin Profile</p></a>
 						</div>
 						<div id = "LinkBox" class = "col-lg-12 col-4">
+							<a href = "https://www.facebook.com/sean.c.gately/"><p>Facebook</p></a>
+						</div>
+						<div id = "LinkBox" class = "col-lg-12 col-4">
 							<a href = "https://github.com/OldIslander"><p>Github</p></a>
 						</div>
 						<div id = "LinkBox" class = "col-lg-12 col-4">
+							<a href = "https://github.com/fasttrackd-student-work/spring-assessment-social-media-feb-2024-team-1"><p>Social Media API</p></a>
+						</div>
+						<div id = "LinkBox" class = "col-lg-12 col-4">
+							<a href = "https://github.com/OldIslander/BlockTime"><p>Block Time</p></a>
+						</div>
+						<div id = "LinkBox" class = "col-lg-12 col-4">
+							<a href = "https://github.com/fasttrackd-student-work/js-assignment-quizler-OldIslander"><p>Quizler</p></a>
+						</div>
+						
+						<div id = "LinkBox" class = "col-lg-12 col-8">
 							<p>Email: seancgately@gmail.com</p>
 						</div>
 						<div id = "LinkBox" class = "col-lg-12 col-4">
 							<p>Phone: 615-609-4852</p>
 						</div>
+						
 					</div>
 				</div>
 	    </div>
+		<script type="module">
+			async function getMe() {
+				const fetched = await fetch("https://api.github.com/users/OldIslander" )
+				return fetched.json()
+			};
+	
+			let myStuff = await getMe()
+			
+			document.getElementById("self-pic").src = myStuff.avatar_url
+			document.getElementById("Bio").innerHTML = myStuff.bio
 
+			console.log("AppleSauce")
+	
+	
+		</script>
 	</header>
+	
 	</body>
+	
 </html>

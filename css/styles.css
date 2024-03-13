@@ -2,6 +2,12 @@
 	font-family: Domine;
 	src: url(Domine-VariableFont_wght.ttf);
 }
+
+@keyframes hover {
+	from {background-color: white;}
+	to {background-color: lightseagreen;}
+  }
+  
 body {
 	color: green;
 	background-color: #f4e3c3;
@@ -12,11 +18,14 @@ body {
 	border-bottom: 3px solid black;
 }
 
-
+#Bio{
+	font-style: italic;
+	border-bottom: 3px solid black;
+}
 #self-pic {
-	background: url("self_xs.jpg") no-repeat;
+	/*background: url("self_xs.jpg") no-repeat;*/
 	margin-right:20px;
-	width: 206px;
+	max-width: 290px;
 	height: 266px;
 	border: 3px solid #9ac2be;
 	
@@ -51,7 +60,9 @@ body {
 
 /* Darker background on mouse-over */
 #DownloadButton:hover {
-  background-color: lightseagreen;
+  animation-name: hover;
+  animation-duration: 0.4s;
+  background-color:lightseagreen;
 }
 
 h1{
